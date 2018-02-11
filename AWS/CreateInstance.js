@@ -3,7 +3,7 @@ var AWS = require('aws-sdk');
 
 var aws_access_key = process.env.AWS_ACCESS_KEY;
 var aws_secret_key = process.env.AWS_SECRET_KEY;
-
+console.log(aws_access_key);
 var region = 'us-east-1';
 
 AWS.config.update({region: region, accessKeyId: aws_access_key, secretAccessKey: aws_secret_key});
